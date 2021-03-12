@@ -10,6 +10,7 @@ namespace WebApplication3.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.mess = "my web";
             return View();
         }
 
