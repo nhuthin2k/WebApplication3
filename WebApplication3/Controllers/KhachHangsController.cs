@@ -41,25 +41,18 @@ namespace WebApplication3.Controllers
             return View(khachHang);
         }
 
-        // GET: KhachHangs/Create
+        [HttpGet]
         public ActionResult Create()
         {
-            var a = new List<testDropdow>() { 
-                new testDropdow(){ Id = 1, Display = "nhà a" },
-                new testDropdow(){ Id = 2, Display = "nhà b" },
-                new testDropdow(){ Id = 3, Display = "nhà e" },
-                new testDropdow(){ Id = 4, Display = "nhà d" }
-            };
-            ViewBag.ListSelect = a;
+            ViewBag.Khachhang = db.KhachHangs;
             return View();
         }
 
+        // GET: KhachHangs/Create   // hiên thi view 
         // POST: KhachHangs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaKhachHang,TenKhachHang,SoDienThoai")] KhachHang khachHang)
+        public ActionResult Create([Bind(Include = "MaKhachHang,TenKhachHang,SoDienThoai")] KhachHang khachHang) // Nhân dữ liêu từ fom gưi lên
         {
             if (ModelState.IsValid)
             {

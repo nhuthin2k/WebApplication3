@@ -38,6 +38,7 @@ namespace WebApplication3.Controllers
         // GET: HangHoa/Create
         public ActionResult Create()
         {
+            ViewBag.Nhacc = db.NhaCCs;
             return View();
         }
 

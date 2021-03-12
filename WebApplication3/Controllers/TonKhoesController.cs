@@ -14,7 +14,7 @@ namespace WebApplication3.Controllers
     {
         private NNTDbContext db = new NNTDbContext();
 
-        // GET: TonKhoes
+        // GET: TonKhos
         public ActionResult Index()
         {
             return View(db.TonKhos.ToList());

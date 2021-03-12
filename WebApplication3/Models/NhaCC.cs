@@ -11,12 +11,13 @@ namespace WebApplication3.Models
     {
         [Key]
         [StringLength(50)]
-        public string MaNCC { get; set; }
+        public string Ma { get; set; }
 
         [StringLength(50)]
         public string TenNCC { get; set; }
 
         [StringLength(11)]
         public string SoDienThoai { get; set; }
+        public ICollection<HangHoa> HangHoas { get; set; }
     }
 }
