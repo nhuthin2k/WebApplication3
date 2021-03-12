@@ -7,7 +7,7 @@ namespace WebApplication3.Models
     using System.Data.Entity.Spatial;
 
     [Table("tonkho")]
-    public partial class TonKho
+    public partial class tonkho
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

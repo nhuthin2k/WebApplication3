@@ -7,7 +7,7 @@ namespace WebApplication3.Models
     using System.Data.Entity.Spatial;
 
     [Table("phieuxuat")]
-    public partial class PhieuXuat
+    public partial class phieuxuat
     {
         [Key]
         [StringLength(10)]

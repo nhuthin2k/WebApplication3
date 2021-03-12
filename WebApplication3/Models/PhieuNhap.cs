@@ -7,7 +7,7 @@ namespace WebApplication3.Models
     using System.Data.Entity.Spatial;
 
     [Table("phieunhap")]
-    public partial class PhieuNhap
+    public partial class phieunhap
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

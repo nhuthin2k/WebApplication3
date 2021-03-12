@@ -6,6 +6,7 @@
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Web.Mvc;
 
     [Table("hanghoas")]
     public partial class HangHoa
@@ -25,7 +26,7 @@
         [Required]
         [StringLength(50)]
         public string DonViTinh { get; set; }
-       
+       [AllowHtml]
         [Required]
         [StringLength(50)]
 
