@@ -17,11 +17,11 @@ namespace WebApplication3.Models
         public virtual DbSet<khachhangs> khachhangs { get; set; }
         public virtual DbSet<Nhaccs> Nhaccs { get; set; }
         public virtual DbSet<nhaps> nhaps { get; set; }
-        public virtual DbSet<phieunhap> phieunhap { get; set; }
-        public virtual DbSet<phieuxuat> phieuxuat { get; set; }
+        public virtual DbSet<PhieuNhap> phieunhap { get; set; }
+        public virtual DbSet<PhieuXuat> phieuxuat { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<tonkho> tonkho { get; set; }
-        public virtual DbSet<xuat> xuat { get; set; }
+        public virtual DbSet<TonKho> tonkho { get; set; }
+        public virtual DbSet<Xuat> xuat { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

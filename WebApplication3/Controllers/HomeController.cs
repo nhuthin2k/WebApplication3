@@ -10,7 +10,7 @@ namespace WebApplication3.Controllers
     {
         public ActionResult Index()
         {
-        
+
             return View();
         }
 

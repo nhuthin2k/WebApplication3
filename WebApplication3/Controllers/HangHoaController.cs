@@ -10,6 +10,7 @@ using WebApplication3.Models;
 
 namespace WebApplication3.Controllers
 {
+    
     public class HangHoaController : Controller
     {
         private NNTDbContext db = new NNTDbContext();
@@ -36,16 +37,14 @@ namespace WebApplication3.Controllers
         }
 
         // GET: HangHoa/Create
+        [Authorize]
         public ActionResult Create()
         {
             ViewBag.Nhacc = db.NhaCCs;
             return View();
         }
 
-        // POST: HangHoa/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost, ValidateInput(false)]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "MaHangHoa,TenHH,DonGia,DonViTinh,MaNCC")] HangHoa hangHoa)
         {

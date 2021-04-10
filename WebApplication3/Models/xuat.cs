@@ -7,7 +7,7 @@ namespace WebApplication3.Models
     using System.Data.Entity.Spatial;
 
     [Table("xuat")]
-    public partial class xuat
+    public partial class Xuat
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
