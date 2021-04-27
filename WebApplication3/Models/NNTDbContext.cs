@@ -20,8 +20,7 @@ namespace WebApplication3.Models
         public DbSet<PhieuXuat> PhieuXuats { get; set; }
         public DbSet<TonKho> TonKhos { get; set; }
         public DbSet<XuatKho> XuatKhos { get; set; }
-        public object NhaCC_HangHoa { get; internal set; }
-
-
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Role> Roles { get; set; }
     }
 }
